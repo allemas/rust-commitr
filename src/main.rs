@@ -10,7 +10,7 @@ fn main() {
     let mut commit_message = git_engine::status::build_commited_message(&repository).expect("build message faild");
     let message = &args[1];
 
-    commit_message = message.to_owned() + "\n\r\n\r" + &commit_message;
+    commit_message = message.to_owned() + "\n\n" + &commit_message;
 
     println!("{}", commit_message);
 
