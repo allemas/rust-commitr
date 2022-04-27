@@ -1,7 +1,4 @@
-use std::fmt::format;
-use git2::{Error, ErrorCode, Repository, StatusOptions, SubmoduleIgnore};
-use git2::AttrValue::String;
-use git2::FileMode::Commit;
+use git2::{Repository, StatusOptions};
 use std::string::String as OtherString;
 
 pub fn build_commited_message(repository: &Repository) -> Result<OtherString, git2::Error> {

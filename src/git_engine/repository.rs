@@ -1,4 +1,4 @@
-use git2::{Error, Commit, ErrorCode, ObjectType, Repository, Signature, StatusOptions, SubmoduleIgnore, Oid};
+use git2::{Error, Commit, ObjectType, Repository, Signature, Oid};
 use std::env;
 
 pub fn get_folder() -> Result<Repository, Error> {
